@@ -1,12 +1,31 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect, useState } from "react";
 import "./App.css";
+import MarkdownPreviewer from "./components/MarkdownPreviewer/MarkdownPreviewer";
+import Footer from "./components/Footer/Footer";
+import defaultMarkdown from "./utils/constants";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [markdownText, setMarkdownText] = useState("");
 
-  return <div className="app">test</div>;
+  const handleUpdateMarkdownText = (event) => {
+    setMarkdownText(event.target.value);
+  };
+
+  useEffect(() => {
+    setMarkdownText(defaultMarkdown);
+  }, []);
+
+  return (
+    <div className="app">
+      <div className="app__content">
+        <MarkdownPreviewer
+          markdownText={markdownText}
+          onUpdateMarkdownText={handleUpdateMarkdownText}
+        />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
