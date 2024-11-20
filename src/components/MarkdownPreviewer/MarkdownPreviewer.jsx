@@ -18,7 +18,7 @@ function MarkdownPreviewer({ markdownText, onUpdateMarkdownText }) {
       <div className="markdown-previewer__preview-title">
         <h2 className="markdown-previewer__preview-title-text">Preview</h2>
       </div>
-      <div className="markdown-previewer__preview">
+      <div className="markdown-previewer__preview" id="preview">
         <ReactMarkdown>{markdownText}</ReactMarkdown>
       </div>
     </div>
