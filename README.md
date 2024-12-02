@@ -1,7 +1,9 @@
 # React + Vite
 
-A simple [https://www.markdownguide.org/](Markdown) previewer using React and Vite.
+A simple [Markdown](https://www.markdownguide.org/) previewer using React and Vite.
 Enter markdown into the text box and it will display how it will look after being processed.
+
+Link to the project description: [Build a Markdown Previewer](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer)
 
 ## Website
 
