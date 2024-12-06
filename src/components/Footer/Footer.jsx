@@ -4,8 +4,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <a
-        href="https://nathanieldaley.github.io/markdown-previewer/"
+        href="https://github.com/nathanielDaley/markdown-previewer"
         className="footer__link"
+        target="_blank"
       >
         <span
           data-content="Developed by Nathaniel Daley"
